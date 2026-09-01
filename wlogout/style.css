@@ -1,0 +1,54 @@
+* {
+    background-image: none;
+    box-shadow: none;
+}
+
+/* El fondo de toda la pantalla */
+window {
+    background-color: rgba(12, 12, 12, 0.9);
+}
+
+/* Diseño base de los botones */
+button {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+    color: #ffffff;
+    /* Tu azul oscuro #232235 con un poco de transparencia para que se funda con el fondo */
+    background-color: rgba(35, 34, 53, 0.8);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    margin: 15px; /* Separamos los botones un poco */
+    
+    /* LA ANIMACIÓN: Transición suave para cualquier cambio */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* El efecto al pasar el ratón por encima (Hover) */
+button:hover {
+    /* Tu borde azul claro */
+    border: 2px solid #32b2d9;
+    /* Hacemos el fondo un poco más brillante */
+    background-color: rgba(50, 178, 217, 0.15);
+    /* Animación: El ícono crece de 25% a 30% */
+    background-size: 30%;
+}
+
+/* Las rutas de las imágenes (Simplificadas sin duplicados) */
+#logout {
+    background-image: image(url("icons/logout.png"), url("/usr/share/wlogout/icons/logout.png"));
+}
+
+#reboot {
+    background-image: image(url("icons/reboot.png"), url("/usr/share/wlogout/icons/reboot.png"));
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown.png"), url("/usr/share/wlogout/icons/shutdown.png"));
+}
+
+#suspend {
+    background-image: image(url("icons/suspend.png"), url("/usr/share/wlogout/icons/suspend.png"));
+}
