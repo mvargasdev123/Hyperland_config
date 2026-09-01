@@ -1,0 +1,37 @@
+@import "config.rasi"
+
+window {
+    fullscreen:       true;
+    padding:          10% 10%; /* Márgenes gigantes para centrar la cuadrícula */
+    background-color: transparent;
+    border:           0px;
+    border-radius:    0px;
+}
+
+listview {
+    columns:          7;
+    lines:            4;
+    spacing:          3%;
+    padding:          2% 0%;
+    background-color: transparent;
+}
+
+element {
+    orientation:      vertical;
+    background-color: transparent;
+    padding:          20px;
+    border-radius:    24px;
+}
+
+element-icon {
+    size:             60px; 
+}
+
+element-text {
+    font:             "JetBrainsMono Nerd Font 13";
+}
+
+mainbox {
+    orientation: vertical;
+    children: [ "inputbar", "listview" ];
+}
